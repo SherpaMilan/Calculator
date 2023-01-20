@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "PT Serif", serif;
+}
+.section {
+  background: linear-gra;
+}
+
+section {
+  background: linear-gradient(
+    180deg,
+    rgba(240, 254, 1, 0.38),
+    rgba(4, 255, 255, 0.36)
+  );
+
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 400px;
+  background: rgba();
+}
+
+.displays {
+  background: #000;
+  height: 110px;
+  width: 100%;
+  text-align: right;
+  color: #fff;
+  padding: 1.2rem;
+  font-size: 1.5rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  position: relative;
+}
+
+.display-1 {
+  font-size: 20px;
+  color: grey;
+}
+.temporary-result {
+  text-align: left;
+  color: lightgrey;
+  font-size: 1rem;
+  position: absolute;
+}
+
+.all-buttons {
+  display: grid;
+  /* 4 columns 1 fraction each */
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.button {
+  border: 0.5px solid rgba(91, 92, 92, 0.14);
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: 0.5sec ease;
+}
+.button:hover {
+  background: rgb(113, 138, 144);
+  transition: 0.5sec ease;
+}
+
+.btn-0 {
+  border-bottom-left-radius: 10px;
+}
+
+.equal {
+  /* giving two columns for = sign */
+  grid-column: span 2;
+  border-bottom-right-radius: 10px;
+}
